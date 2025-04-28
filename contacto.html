@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SINERGIA - Carteras de Cuero</title>
+    <link rel="stylesheet" href="2estilos.css">
+</head>
+<body>
+    <header>
+		<a href= "2index.html"><img class="logo" src="LOGO1.JPEG.jpg"></a>
+		<a href="#" class="icono" onClick="MiFuncion()">
+			<i class="fa fa-bars"></i></a>
+<nav id="navegador" class="">
+	<ul>
+	<il> <a href= "productos.html">Productos</a></il>
+		<il><a href= "contacto.html">Contacto</a></il>
+	</ul>
+			</nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Carteras de cuero</h2>
+                <p>Diseño, calidad y elegancia en cada detalle</p>
+                <a href="productos.html" class="boton">Ver colección</a>
+            </div>
+        </section>
+
+        <section class="destacados">
+            <h2>Productos destacados</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <div class="producto-imagen"><img src="carteranegra.jpeg" alt="cartera"></div>
+                    <h3>Carteras</h3>
+                    <p>Toque aquí</p>
+                </div>
+                <div class="producto">
+                    <div class="producto-imagen"><img src="5bandolera.jpeg" alt="bandolera"></div>
+                    <h3>Bandoleras</h3>
+                    <p>Toque aquí</p>
+                </div>
+                <div class="producto">
+                    <div class="producto-imagen"><img src="riñonera.jpeg" alt="riñonera"></div>
+                    <h3>Riñonera</h3>
+                    <p>Toque aquí</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-seccion">
+                <h3>Sobre nosotras</h3>
+                <p>SINERGIA nace como un emprendimiento dedicado a la creación de carteras de cuero de alta calidad.</p>
+            </div>
+            <div class="footer-seccion">
+                <h3>Contacto</h3>
+                <p>Email: valendomene433@gmail.com</p>
+                <p>Teléfono: (054) 2995777131</p>
+                <p>Dirección: Carlos h Rodriguez 32, Neuquén capital</p>
+            </div>
+            <div class="footer-seccion">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SINERGIA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+	<script>
+function MiFuncion() {
+  /* aquí se define el ID del elemento que va a tomar la clase */
+  var x = document.getElementById("navegador");
+  if (x.className === "") {
+    /* esta es la clase que se agrega al elemento con el */
+    id="navegador"
+    x.className += "mostrarmenu";
+    } else {
+    x.className = "";
+    }
+ }
+</script> 
+</body>
+</html>

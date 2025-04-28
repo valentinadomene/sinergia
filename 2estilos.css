@@ -1,0 +1,295 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;}
+body {
+    background-color: #f9f9f9;
+    color: #333;}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: #b29e85;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100}
+.logo {flex: 1; width: 100px}
+.logo img {width: 150px; height: auto}
+header h1 {flex: 1;text-align: center;font-size: 2.5rem;color: #5c3c10;font-weight: bold;letter-spacing: 2px}
+nav { flex: 1;}
+nav ul a {color:black; text-decoration: none; display: inline-block; padding: 20px}
+nav ul {display: flex;justify-content: flex-end;list-style: none;}
+nav ul li {margin-left: 30px;}
+nav ul li a {text-decoration: none;color: #5c3c10;font-weight: bold;font-size: 1.1rem;transition: color 0.3s;}
+nav ul li a:hover {color: #a97d32;}
+.hero {height: 80vh;background-image: url("fondo.jpeg");background-size: cover;background-position: center;background-attachment: fixed;display: flex;align-items: center;justify-content: center;text-align: center;color: white;position: relative;}
+.hero::before {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.5);}
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: 0 20px;}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #5c3c10;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #a97d32;
+}
+.destacados {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.destacados h2 {
+    font-size: 2.5rem;
+    color: #5c3c10;
+    margin-bottom: 50px;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    flex: 0 1 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 1.3rem;
+    color: #5c3c10;
+    margin-bottom: 10px}
+
+.producto p {
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-seccion {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.footer-seccion h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #a97d32;
+}
+
+.footer-seccion p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #a97d32;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+	border-top: 1px solid rgba(255,255,255,0.1);}
+.icono {color: #fff; font-size: 30px; display: none; position:absolute; top: 10px; right: 10px}
+/* tabletas */
+@media (max-width: 768px){
+/* aca se define el cambio de 3 columnas a 2 */
+	.caja {width: 50%;}
+	header {display: block;text-align: center}
+	nav ul {justify-content: center}}
+    
+/* celulares */
+@media (max-width: 480px) {
+/* aca se define el cambio de 2 columnas a 1 */
+		.caja {width:100%;}
+	nav ul {display: block;text-align: center}
+	nav ul a {display: block}
+	/* oculto la barra de navegacion */
+	nav {display: none}
+	.icono {display: block}
+	.mostrarmenu {display: block}
+}
+/* Estilos para la página de productos */
+
+/* Estilo para los títulos de cada sección */
+.seccion-titulo {
+    text-align: center;
+    color: #5c3c10;
+    margin: 40px 0 20px 0;
+    font-size: 2rem;
+}
+
+/* Contenedor principal que crea la cuadrícula de productos */
+.productos-container {
+    /* Usamos flexbox para crear la cuadrícula */
+    display: flex;
+    /* Permitimos que los elementos se envuelvan a la siguiente línea */
+    flex-wrap: wrap;
+    /* Centramos los elementos y distribuimos el espacio */
+    justify-content: center;
+    /* Añadimos espacio entre los elementos */
+    gap: 20px;
+    /* Centramos el contenedor en la página */
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+/* Estilo para cada cuadro de producto */
+.producto-cuadro {
+    /* Ancho de cada cuadro */
+    width: 250px;
+    /* Fondo blanco */
+    background-color: white;
+    /* Bordes redondeados */
+    border-radius: 8px;
+    /* Sombra suave */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Espacio interno */
+    padding: 10px;
+    /* Efecto al pasar el mouse */
+    transition: transform 0.3s;
+}
+
+/* Efecto al pasar el mouse por encima del producto */
+.producto-cuadro:hover {
+    /* Elevamos ligeramente el cuadro */
+    transform: translateY(-5px);
+    /* Sombra más pronunciada */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Estilo para las imágenes dentro de los cuadros */
+.producto-cuadro img {
+    /* La imagen ocupa todo el ancho del cuadro */
+    width: 100%;
+    /* Altura fija para todas las imágenes */
+    height: 200px;
+    /* La imagen cubre todo el espacio sin distorsión */
+    object-fit: cover;
+    /* Bordes redondeados para la imagen */
+    border-radius: 4px;
+}
+
+/* Estilo para el título del producto */
+.producto-cuadro h3 {
+    /* Color del texto */
+    color: #333;
+    /* Tamaño de la fuente */
+    font-size: 1.1rem;
+    /* Espacio superior e inferior */
+    margin: 10px 0 5px;
+}
+
+/* Estilo para el precio */
+.producto-cuadro .precio {
+    /* Color del precio */
+    color: #5c3c10;
+    /* Hacemos el texto más grande y en negrita */
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* Quitamos el margen inferior */
+    margin: 0;
+}
+
+/* Adaptamos el diseño para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .productos-container {
+        /* Menos espacio entre productos en pantallas pequeñas */
+        gap: 15px;
+    }
+    
+    .producto-cuadro {
+        /* Productos un poco más pequeños */
+        width: 200px;
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .producto-cuadro {
+        /* En móviles, los productos ocupan más ancho */
+        width: 150px;
+    }
+    
+    .producto-cuadro img {
+        /* Imágenes más pequeñas */
+        height: 150px;
+    }
+    
+    .producto-cuadro h3 {
+        /* Títulos más pequeños */
+        font-size: 0.9rem;
+    }
+    
+    .producto-cuadro .precio {
+        /* Precios más pequeños */
+        font-size: 1rem;
+    }
+}
