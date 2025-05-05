@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-		<a href= "2index.html"><img class="logo" src="LOGO1.JPEG.jpg"></a>
+		<a href= "index.html"><img class="logo" src="LOGO1.JPEG.jpg"></a>
 		<a href="#" class="icono" onClick="MiFuncion()">
 			<i class="fa fa-bars"></i></a>
 <nav id="navegador" class="">
@@ -20,6 +20,15 @@
 			</nav>
     </header>
     <main>
+		<div class="slider-contenedor">
+    <div class="slider">
+      <div class="slide"><img src="slider1.png"></div>
+      <div class="slide"><img src="slider2.png"></div>
+      <div class="slide"><img src="slider3.png"></div>
+    </div>
+    <button class="boton-anterior">Anterior</button>
+    <button class="boton-siguiente">Siguiente</button>
+  </div>
         <section class="hero">
             <div class="hero-content">
                 <h2>Carteras de cuero</h2>
@@ -87,4 +96,43 @@ function MiFuncion() {
  }
 </script> 
 </body>
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sliderContenedor = document.querySelector('.slider-contenedor');
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const botonAnterior = document.querySelector('.boton-anterior');
+    const botonSiguiente = document.querySelector('.boton-siguiente');
+ 
+    let indiceActual = 0;
+    const numSlides = slides.length;
+ 
+    function actualizarSlider() {
+      slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+      actualizarBotones();
+    }
+ 
+    function actualizarBotones() {
+      botonAnterior.disabled = indiceActual === 0;
+      botonSiguiente.disabled = indiceActual === numSlides - 1;
+    }
+ 
+    botonAnterior.addEventListener('click', function() {
+      if (indiceActual > 0) {
+        indiceActual--;
+        actualizarSlider();
+      }
+    });
+ 
+    botonSiguiente.addEventListener('click', function() {
+      if (indiceActual < numSlides - 1) {
+        indiceActual++;
+        actualizarSlider();
+      }
+    });
+ 
+    // Inicializar el slider
+    actualizarSlider();
+});
+</script>
 </html>
