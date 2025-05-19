@@ -20,13 +20,31 @@
 			</nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Carteras de cuero</h2>
-                <p>Diseño, calidad y elegancia en cada detalle</p>
-                <a href="productos.html" class="boton">Ver colección</a>
-            </div>
-    
+			<h1>Formulario</h1>
+    <div class="formulario-contenedor">
+        <form action="gracias.html" method="post">
+            <p>
+                <label>Nombre y Apellido:</label><br>
+                <input type="text" name="nombre" required placeholder="Nombre">
+            </p>
+            <p>
+                <label>Email:</label><br>
+                <input type="email" name="email" required placeholder="Email">
+            </p>
+            <p>
+                <label>País:</label><br>
+                <select name="pais">
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <option>Chile</option>
+                    <option>Ecuador</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar formulario">
+            </p>
+        </form>
+    </div>    
     </main>
     <footer>
         <div class="footer-container">

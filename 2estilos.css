@@ -159,11 +159,15 @@ footer {
 .icono {color: #fff; font-size: 30px; display: none; position:absolute; top: 10px; right: 10px}
 /* tabletas */
 @media (max-width: 768px){
+	.menuchico .logo {width: 100px;}
+	.menuchico {padding: 0 10px;}
 /* aca se define el cambio de 3 columnas a 2 */
 	.caja {width: 50%;}
 	header {display: block;text-align: center}
 	nav ul {justify-content: center}}
-    
+@media (max-width: 727px){
+	.marcoanuncio {width: 300px; height: 600px}
+}
 /* celulares */
 @media (max-width: 480px) {
 /* aca se define el cambio de 2 columnas a 1 */
@@ -257,7 +261,11 @@ footer {
     /* Quitamos el margen inferior */
     margin: 0;
 }
-
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: 30px auto}
+form{width: 60%; margin: auto; }
+form p {margin-bottom: 20px}
+input, select {width: 100%; padding: 10px; box-sizing: border-box;border: 1px solid #000000;max-width: 400px; }
+label {float: left; width: 30%}
 /* Adaptamos el diseño para pantallas más pequeñas */
 @media (max-width: 768px) {
     .productos-container {
@@ -338,7 +346,7 @@ footer {
 .boton-anterior:disabled, .boton-siguiente:disabled {
   opacity: 0.5;
   cursor: not-allowed;}
-.marcoanuncio {width: 728px; height: 90px; display: block; margin: auto}
+
 @media (max-width:480px){
 	.caja {width: 100%;}
 	nav ul {display: block; text-align: center}
@@ -347,4 +355,5 @@ footer {
 	.icono {display: block; position: absolute; top: 10px; right: 10px;}
 	.mostrarmenu {left: 0;}
 	.marcoanuncio {width: 300px; height: 600px}
+	label {display: none}
 }
