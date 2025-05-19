@@ -1,0 +1,88 @@
+<!-- anuncio.html - Código para el anuncio promocional de Sinergia -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio Promocional Sinergia</title>
+<style>  
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;}
+        
+        .anuncio-promocional {
+           background-color: #b29e85;
+            padding: 30px 0;
+            width: 100%}
+       
+        .contenedor-anuncio {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;}
+        
+        .logo-anuncio img {
+            height: 90px;
+            width: auto;
+		 display: block; margin: auto;}
+        
+        .texto-anuncio h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin: 0;}
+        
+        .boton-anuncio .btn-comprar {
+            background-color: #232323;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border-radius: 5px;}
+        
+        .boton-anuncio .btn-comprar:hover {
+            background-color: #000;
+            transform: scale(1.05);}
+        
+        /* Estilos responsivos */
+        @media (max-width: 719px) {
+            .contenedor-anuncio {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;}
+            
+            .texto-anuncio h3 {
+                font-size: 20px;
+                margin: 10px 0;}}
+    </style>
+	   
+
+</head>
+<body>
+    <!-- Sección de anuncio promocional -->
+    <div class="anuncio-promocional">
+        <div class="contenedor-anuncio">
+            <div class="logo-anuncio">
+                <img src="LOGO1.JPEG.jpg" alt="Logo Sinergia">
+            </div>
+            <div class="texto-anuncio">
+                <h3>25% OFF EN LA SEGUNDA UNIDAD</h3>
+            </div>
+            <div class="boton-anuncio">
+                <a href="index.html" class="btn-comprar" target="_blank">COMPRAR YA</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

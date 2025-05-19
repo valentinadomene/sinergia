@@ -338,4 +338,13 @@ footer {
 .boton-anterior:disabled, .boton-siguiente:disabled {
   opacity: 0.5;
   cursor: not-allowed;}
- 
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: auto}
+@media (max-width:480px){
+	.caja {width: 100%;}
+	nav ul {display: block; text-align: center}
+	nav ul a {padding: 20px; display: block}
+	nav {position: absolute; left: -100%; width: 100%; background-color: aqua; transition: all ease 1s;}
+	.icono {display: block; position: absolute; top: 10px; right: 10px;}
+	.mostrarmenu {left: 0;}
+	.marcoanuncio {width: 300px; height: 600px}
+}
