@@ -261,7 +261,7 @@ footer {
     /* Quitamos el margen inferior */
     margin: 0;
 }
-.marcoanuncio {width: 728px; height: 90px; display: block; margin: 30px auto}
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: 30px auto; justify-content: space-around}
 form{width: 60%; margin: auto; }
 form p {margin-bottom: 20px}
 input, select {width: 100%; padding: 10px; box-sizing: border-box;border: 1px solid #000000;max-width: 400px; }
@@ -351,9 +351,9 @@ label {float: left; width: 30%}
 	.caja {width: 100%;}
 	nav ul {display: block; text-align: center}
 	nav ul a {padding: 20px; display: block}
-	nav {position: absolute; left: -100%; width: 100%; background-color: aqua; transition: all ease 1s;}
+	nav {position: absolute; left: -100%; width: 100%; background-color: #b29e85; transition: all ease 1s;}
 	.icono {display: block; position: absolute; top: 10px; right: 10px;}
 	.mostrarmenu {left: 0;}
-	.marcoanuncio {width: 300px; height: 600px}
+	.marcoanuncio {width: 300px; height: 600px;}
 	label {display: none}
 }
