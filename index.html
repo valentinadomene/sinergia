@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<link rel="stylesheet" href="css/lightbox.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,15 +42,15 @@
             <h2>Productos destacados</h2>
             <div class="productos-container">
                 <div class="producto">
-                    <div class="producto-imagen"><img src="5cartera.jpeg" alt="cartera"></div>
+                    <div class="producto-imagen"><a href="carteranegra.jpeg" data-lightbox="fotos"><img src="5cartera.jpeg" alt="cartera"></a></div>
                     <h3>Carteras</h3>
                 </div>
                 <div class="producto">
-                    <div class="producto-imagen"><img src="8bandolera.jpeg" alt="bandolera"></div>
+                    <div class="producto-imagen"><a href="8bandolera.jpeg" data-lightbox="fotos"><img src="8bandolera.jpeg" alt="bandolera"></a></div>
                     <h3>Bandoleras</h3>
                 </div>
                 <div class="producto">
-                    <div class="producto-imagen"><img src="riñonera.jpeg" alt="riñonera"></div>
+                    <div class="producto-imagen"><a href="riñonera.jpeg" data-lightbox="fotos"><img src="riñonera.jpeg" alt="riñonera"></a></div>
                     <h3>Riñoneras</h3>
                 </div>
             </div>
@@ -94,6 +95,7 @@ function MiFuncion() {
     }
  }
 </script> 
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 	<script>
   document.addEventListener('DOMContentLoaded', function() {
