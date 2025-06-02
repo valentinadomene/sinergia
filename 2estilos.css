@@ -303,7 +303,7 @@ label {float: left; width: 30%}
 }
 .slider-contenedor {
   position: relative; /* Para posicionar los botones dentro */
-  width: 100vw; /* Ancho del viewport */
+  width: 100%; /* Ancho del viewport */
   overflow: hidden; /* Oculta el contenido que se sale del contenedor */
 }
  
