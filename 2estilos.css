@@ -157,6 +157,27 @@ footer {
     padding-top: 20px;
 	border-top: 1px solid rgba(255,255,255,0.1);}
 .icono {color: #fff; font-size: 30px; display: none; position:absolute; top: 10px; right: 10px}
+
+.footer-boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-footer {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #a97d32;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.boton-footer:hover {
+    background-color: #5c3c10;
+}
+
 /* tabletas */
 @media (max-width: 768px){
 	.menuchico .logo {width: 100px;}
