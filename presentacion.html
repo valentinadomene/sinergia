@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SINERGIA - Carteras de Cuero</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+
+<body>
+    <header>
+        <div class="sc">
+            <a href="index.html"> 
+                <img src="LOGO1.JPEG.jpg" class="logo" alt="logo">
+            </a>
+        </div>
+    </header>
+    
+    <main>    
+<section class="bloque-carteras">
+  <div class="texto-superior">
+    <p>Valentina Domene | Prof. Wenceslao Zavala | Contenidos y creatividad 1</p>
+  </div>
+
+  <div class="contenedor-carteras">
+    <img src="carteranegra.jpeg" class="m31img" alt="cartera">
+    <img src="8bandolera.jpeg" class="m31img" alt="cartera">
+    <img src="5riñonera.jpeg" class="m31img" alt="cartera">
+    <img src="6cartera.jpeg" class="m31img" alt="cartera">
+  </div>
+
+  <div class="texto-inferior">
+    <p>Público dirigido: personas entre 18 años y 50 años</p>
+  </div>
+</section>
+            
+        <section>
+            <h5>Sobre el sitio web</h5>
+            <div class="m32text">
+                <p>Página web Sinergia carteras de cuero</p>
+                <p>Los objetivos del sitio es ofrecer un catálogo atractivo y detallado de carteras de calidad y,por otro lado, facilitar el proceso de compra, con una interfaz sencilla y opciones de pago seguras. 
+					El desarrollo del sitio web “Carteras Sinergia” implicó una inversión total de 720.01 USD + 4.800 ARS anuales de hosting, considerando 48 horas de trabajo a 15 USD/hora, dominio promocional y hosting.</p>
+            </div>    
+        </section>    
+            
+        <section>
+            <h5>Contenido</h5>
+            <div class="contenido">
+                <div class="seccion">
+                    <img src="inicio.jpg.png" class="imgseccion" alt="Seccion">
+                    <h9>Inicio</h9>
+                    <p>Sección donde se encuentra las carteras, bandoleras y riñoneras principales. Además, una galeria, un carrusel y un anuncio</p>
+                </div>
+                
+                <div class="seccion">
+                    <img src="productos.jpg.png" class="imgseccion" alt="Productos">
+                    <h9>Productos</h9>
+                    <p>Sección donde se pueden ver todos los modelos de carteras, bandoleras y riñoneras.</p>
+                </div>
+                
+                <div class="seccion">
+                    <img src="contacto.jpg.png" class="imgseccion" alt="Contacto">
+                    <h9>Contacto</h9>
+                    <p>Sección donde los usuarios pueden llenar un formulario para recibir por mail descuentos sobre el sitio web.</p>
+                </div>
+                
+                <div class="seccion">
+                    <img src="gracias.jpg.png" class="imgseccion" alt="Respuesta">
+                    <h9>Respuesta</h9>
+                    <p>Respuesta cuando te inscribis al formulario</p>
+                </div>
+                
+                <div class="seccion">
+                    <img src="mail.jpg.png" class="imgseccion" alt="Mail">
+                    <h9>Mail</h9>
+                    <p>Mail que recibís al inscribirte a la página web.</p>
+                </div>    
+            </div>    
+        </section>    
+            
+        <section>
+            <img src="mapa.jpg.png" class="m33img" alt="Mapa del sitio">
+        </section>    
+            
+        <section>
+            <h5>Wireframes</h5>
+            <div class="slider-containerm34">
+                <img src="wirefrime.jpg.png" class="slider-image active" alt="Wireframe 1">
+                <img src="wirefrime2.jpg.png" class="slider-image" alt="Wireframe 2">
+                <img src="wirefrime3.jpg.png" class="slider-image" alt="Wireframe 3">
+                <img src="wirefrime4.jpg.png" class="slider-image" alt="Wireframe 4">            
+                <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+                
+        <section>
+  <div class="cajaanuncionat">
+    <iframe src="anuncio.html" name="marco" frameborder="0" scrolling="no" class="anuncionat"></iframe>
+  </div>
+</section>
+
+    </main>    
+    
+    <footer>
+        <div class="cajafooter">            
+            <div class="textofooter">
+                <p>Esta es una página para promocionar carteras de cuero, bandoleras y riñoneras.</p>
+            </div>
+            
+            <a href="index.html" target="_blank" class="botonpresentacion">Sobre el sitio web</a>
+        </div>
+    
+    </footer>
+    
+    <script>
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slider-image");
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) slide.classList.add("active");
+        });
+      }
+
+      function changeSlide(direction) {
+        const slides = document.querySelectorAll(".slider-image");
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+    </script>
+    
+    <script>
+      // Función para cambiar la imagen
+      function changeImage(newSrc) {
+        document.getElementById("rolloverImage1").src = newSrc;
+      }
+    </script>
+
+</body>
+</html>
